@@ -16,6 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 
+// POST contact information to data base
 app.post('/sendContactInformation', (req, res) => {
   const contactInformation = req.body
 

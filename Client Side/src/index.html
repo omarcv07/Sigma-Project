@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- Bootstrap and customized styles inside styles.css  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sigma</title>
+
+</head>
+<body>
+    <!-- container  -->
+    <div class="container py-5">
+
+        <!-- First Layout  -->
+        <div class="row row-content justify-content-center">
+            <div class="col-12 col-md-8 text-center">
+                <img src="./img/sigma-logo.png" alt="sigma-logo" class="mb-4 logo">
+                <h1 class="mb-4">Prueba de desarrollo Sigma</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        <!-- / First Layout  -->
+
+        <!-- === Second Layout === -->
+        <div class="row justify-content-center align-items-center my-4">
+
+             <!-- === Sigma image === -->
+            <div class="col-12 col-md-5">
+                <img class="img-fluid" src="./img/sigma-bg.png" alt="sigma-image">
+            </div>
+             <!-- === /Sigma image === -->
+
+            <!-- === Form === -->
+            <div class="col-12 col-md-5">
+                <div class="card">
+                    <div class="card-body px-sm-5 pt-sm-5">
+                        <form id="contactInformation">
+                            <div class="form-group row">
+                                <label for="departamento" class="col col-form-label">Departamento*</label>                        
+                                <div class="col-md-12" id="departmentListRender"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ciudad" class="col col-form-label">Ciudad*</label>                        
+                                <div class="col-md-12" id="cityListRender"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="nombre" class="col col-form-label">Nombre*</label>                        
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Pepito de Jesus">   
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col col-form-label">Correo*</label>                        
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Pepitodejesus@gmail.com">   
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="justify-content-center d-flex col-md-12 mt-3">
+                                    <button type="submit" class="btn">
+                                        ENVIAR
+                                    </button>
+                                </div>
+                            </div>    
+                        </form>
+                    </div>            
+                </div>
+            </div>
+            <!-- === /Form === -->
+
+        </div>  
+        <!-- / Second Layout -->
+
+        <!-- === Modal === -->
+        <div class="fade modal" id="successMessage" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Bien hecho!</h4>
+                    <p>Tu información ha sido recibida satisfactoriamente</p>
+                </div>
+            </div>
+        </div>
+        <!-- === /Modal === -->
+
+    </div>
+    <!-- === /container ===  -->
+    
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js-modules/jquery.min.js"></script>
+    <script src="./js-modules/jquery.validate.min.js"></script>
+    <script src="./js-modules/popper.min.js"></script>x
+    <script src="./js-modules/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

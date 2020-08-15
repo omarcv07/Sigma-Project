@@ -18,7 +18,7 @@ $(document).ready(function() {
             $('#departmentListRender').append(departmentListContainer)
 
             $("#departmentId").on('change',function(){
-                var getValue=$(this).prop('selectedIndex');
+                let getValue = $(this).prop('selectedIndex');
                 globalId = getValue;
             });
         },
@@ -81,9 +81,9 @@ $(document).ready(function() {
             }
         },
         invalidHandler: function(event, validator) {
-            var errors = validator.numberOfInvalids();
+            let errors = validator.numberOfInvalids();
             if (errors) {
-                var message = errors === 1
+                let message = errors === 1
                   ? 'You missed 1 field. It has been highlighted'
                   : `<span class="text-danger">You missed ${errors} fields. They have been highlighted<span>`;  
             }

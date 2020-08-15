@@ -73,6 +73,7 @@ $(document).ready(function() {
             nombre: {
                 required: true, 
                 maxlength: 50,
+                minlength: 1
             }, 
             email: {
                 required: true, 
